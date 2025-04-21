@@ -1,0 +1,91 @@
+Comandos Java
+javac - Compilador de Java
+java - Lanzador del programa
+jar - Se utiliza para empaquetar multiples archivos en un archivo java (Java ARchive)
+javadoc - Se utiliza para crear documentación.
+
+
+------
+
+Garbage Collector - System.gc()
+NO garantiza que el garbage collector pase.
+El garbage collector sale cada vez que una variable se queda sin referencia.
+No se puede canderizar, programar que pase en un cierto momento.
+
+
+-------
+
+Bloques:
+inicializador
+{} -> se ejecuta solo si se crea una instancia de la clase
+void nombre{} --> se ejecuta solo si se crea una instancia de la clase
+static{} --> se ejecuta siempre una vez
+constructor clase(){} --> se ejecuta al hacer la instancia
+main{}
+
+Los static pertenecen a la clase y solo de jecutan 1 sola vez.
+Orden de ejecución:
+Bloques estáticos
+Bloques Anónimos
+Constructor
+
+Las variables siguen el mismo orden de ejecución.
+variables estáticas
+
+
+----
+Concatenación cadena nuevo java 13+
+"""
+Bloque de texto
+Lo que sea que queramos.
+
+"""
+En lugar de concatenar con + y \n
+
+
+----
+keyword var
+
+var se puede utilizar en métodos y se han de inicializar para que pueda inferir el tipo de dato.
+
+----
+Defaults
+float y numeros = 0
+char u000
+String null
+Todos los Objetos serán null como default.
+Las variables de clase nunca son nulls.
+Las variables locales no tienen default. Dentro de método, bloques inicialización, etc.
+
+
+----
+Uso de _
+Ouede haber mas de un _ seguido ____ .
+Es como una coma.
+No pude ir ni al principio, ni al final.
+tampoco puede ir antes o depues de un punto.
+
+
+-----
+
+El octal empieza en 0
+El hexadecimal empieza en 0x
+El binario empieza en 0b o 0B
+
+cualquien int que empieze con los diferentes identificadores.
+
+int = 1 +  int = 010   esto da 9 ya que uno es decimal y el otro es octal.
+
+------
+Los imports de forma explicita tienen preferencia sobre los llamados mediante *
+import paquete.ClaseeEspecifica
+import paquete.*
+
+------
+Los primitivos no tienen metodos ni propiedades.
+int, short, etc.
+Solo los objetos y empaquetadores tienen metodos
+String.length()
+
+
+
