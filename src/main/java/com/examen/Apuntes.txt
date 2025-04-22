@@ -12,9 +12,15 @@ NO garantiza que el garbage collector pase.
 El garbage collector sale cada vez que una variable se queda sin referencia.
 No se puede canderizar, programar que pase en un cierto momento.
 
+-------
+& --> Evalua todo
+&& (short circuit)  --> Ecalua hasta que encuentra un false. Ahi deja de evaluar lo que sigue.
+-------
+En las operaciones compuestas hay un cast implicito
++=, -= , /= , %=, *=
+
 
 -------
-
 Bloques:
 inicializador
 {} -> se ejecuta solo si se crea una instancia de la clase
@@ -88,4 +94,9 @@ Solo los objetos y empaquetadores tienen metodos
 String.length()
 
 
+-------
+La suma de bytes, shorts, charts siempre devuelven un int
 
+-------
+(alt +126)
+~ --> invierte los 0 de un número en bites // (-1 * valor ) -1
