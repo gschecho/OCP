@@ -28,6 +28,20 @@ public class Flow {
         //JAVA 14 se añaden las , en el case
         //podemos asignarlo, yield es como un return.
 
+        //enum conjunto de CONSTANTES
+
+        // en el switch expresion siempre debe devolver algo el switch por lo tanto en la mayoria de los casos tiene que haber un default
+        // En un bloque de código deben  abarcar todas las posibilidades, ej en un if else debe devolver un valor tanto en el if como en el else.
+        // despues de los bloques de código no lleva un punto y coma
+        //al finalizar el switch lleva un punto y coma.
+        //PATTERN MATCHING
+
+        enum Meses {ENERO, FEBRERO, MARZO, ABRIL, MAYO, JUNIO, JULIO, AGOSTO, SEPTIEMBRE, OCTUBRE, NOVIEMBRE, DICIEMBRE };
+        Meses mes = ...;
+        var estacion = switch(mes){
+            case ENERO -> "invierno";
+        };
+
 
         var type = switch(a){
             case 1,2 -> "Snake";
@@ -60,6 +74,12 @@ public class Flow {
             System.out.println(b);
             System.out.println(b.getClass());
         }
+
+
+        //LABELS
+
+        UNA_ETIQUETA:
+
 
 
     }
