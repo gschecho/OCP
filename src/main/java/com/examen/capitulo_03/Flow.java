@@ -39,7 +39,10 @@ public class Flow {
         enum Meses {ENERO, FEBRERO, MARZO, ABRIL, MAYO, JUNIO, JULIO, AGOSTO, SEPTIEMBRE, OCTUBRE, NOVIEMBRE, DICIEMBRE };
         Meses mes = ...;
         var estacion = switch(mes){
-            case ENERO -> "invierno";
+            case DICIEMBRE, ENERO, FEBRERO -> "invierno";
+            case MARZO, ABRIL, MAYO -> "Primavera";
+            case JUNIO, JULIO, AGOSTO -> "Verano";
+            case SEPTIEMBRE, OCTUBRE, NOVIEMBRE -> "Otoño";
         };
 
 
@@ -76,9 +79,32 @@ public class Flow {
         }
 
 
-        //LABELS
+        int intarray[] = new int[10];
+        intarray[0] = 1;
 
-        UNA_ETIQUETA:
+        //LABELS
+        // LABEL:
+        var wa =0;
+        LABEL_WHILE: while(wa < 5){
+            System.out.println(a);
+            a++;
+        }
+
+        // El default de for es true
+        for(;;){
+            System.out.printf("LOOP INFINITO");
+        }
+
+        // for (;true;) -> compila for (;false;) -> no compila
+
+
+
+
+        LABEL_FOR_EXTERNO: for(int i =0 ; i< 10; i++){
+                for(int j =0 ; j< 10; j++){
+                    break LABEL_FOR_EXTERNO;
+                }
+        }
 
 
 
