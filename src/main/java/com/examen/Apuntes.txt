@@ -100,3 +100,17 @@ La suma de bytes, shorts, charts siempre devuelven un int
 -------
 (alt +126)
 ~ --> invierte los 0 de un número en bites // (-1 * valor ) -1
+
+------
+
+for
+no se puede definir 2 veces el int for(int x= 0, int j =1;  )
+------
+
+No se puede usar break y continue en un ternario
+
+--------
+else if(x indtanceof Integer)
+esle{sout("Lo que sea")}
+else puede tener una comparación como el else if.
+no se puede utilizar el keyword default

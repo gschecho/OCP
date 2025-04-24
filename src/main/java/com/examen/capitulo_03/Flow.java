@@ -2,6 +2,7 @@ package com.examen.capitulo_03;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Flow {
     public static void main(String[] args) {
@@ -37,8 +38,8 @@ public class Flow {
         //PATTERN MATCHING
 
         enum Meses {ENERO, FEBRERO, MARZO, ABRIL, MAYO, JUNIO, JULIO, AGOSTO, SEPTIEMBRE, OCTUBRE, NOVIEMBRE, DICIEMBRE };
-        Meses mes = ...;
-        var estacion = switch(mes){
+        Meses mes = Meses.ENERO;
+                var estacion = switch(mes){
             case DICIEMBRE, ENERO, FEBRERO -> "invierno";
             case MARZO, ABRIL, MAYO -> "Primavera";
             case JUNIO, JULIO, AGOSTO -> "Verano";
@@ -87,14 +88,16 @@ public class Flow {
         var wa =0;
         LABEL_WHILE: while(wa < 5){
             System.out.println(a);
-            a++;
+            wa++;
         }
 
         // El default de for es true
+        /*
         for(;;){
-            System.out.printf("LOOP INFINITO");
+            System.out.println("LOOP INFINITO");
+            break;
         }
-
+        */
         // for (;true;) -> compila for (;false;) -> no compila
 
 
@@ -102,10 +105,21 @@ public class Flow {
 
         LABEL_FOR_EXTERNO: for(int i =0 ; i< 10; i++){
                 for(int j =0 ; j< 10; j++){
-                    break LABEL_FOR_EXTERNO;
+
+                    if (j == 5) {
+                        System.out.println("BREAK");
+                        break LABEL_FOR_EXTERNO;
+                    } else {
+                        continue;
+                    }
                 }
         }
 
+        System.out.println("FOR");
+        for(int i = 0; ++i< 10 && i< intarray.length;){
+            System.out.println("IMPRIME I:");
+            System.out.println(i);
+        }
 
 
     }
