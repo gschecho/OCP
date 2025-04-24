@@ -114,3 +114,9 @@ else if(x indtanceof Integer)
 esle{sout("Lo que sea")}
 else puede tener una comparación como el else if.
 no se puede utilizar el keyword default
+
+-------
+PatternMatching introducido java 16
+La variable asignada al pattern no se puede instanciar 2 veces con el mismo nombre
+if(a instanceof b)
+else if(a instanceof b)
