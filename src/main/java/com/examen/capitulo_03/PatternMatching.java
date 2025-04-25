@@ -29,6 +29,16 @@ public class PatternMatching {
     }
 
 
+    void testCompilacion(){
+        Integer value = 123;
+        if(value instanceof Integer data){
+            // En java 17 no puede ser el mismo tipo que se da y se asigna a data, debe ser una subclase
+            // En java 21 eliminan esta restricción
+            System.out.println("NO COMPILA");
+        }
+    }
+
+
 
 
     public static void main(String[] args) {
