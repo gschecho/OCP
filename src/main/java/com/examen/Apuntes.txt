@@ -120,3 +120,14 @@ PatternMatching introducido java 16
 La variable asignada al pattern no se puede instanciar 2 veces con el mismo nombre
 if(a instanceof b)
 else if(a instanceof b)
+
+-----
+switch
+el default puede ir en cualquier lado, pero si no tiene break se ejecutara todo lo siguiente.
+pueden lanzar excepciones.
+
+-----
+
+String
+No se le puede pasar un int a un string, si queremos hacerlo debemos concatenar un "" para convertirlo.
+El casteo no funciona. (String)(1)

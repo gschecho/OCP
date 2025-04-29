@@ -1,0 +1,63 @@
+package com.examen.capitulo_04;
+
+import java.util.*;
+
+public class ArraysClass {
+    public static void main(String[] args) {
+
+        int[][] numeros = new int[10][];
+        //El primer  array es obligatorio definirlo, los interiores no.
+        // el primer elemento es el fijo, los siguientes pueden ser variables.
+
+       // numeros[0][0] = 1;
+       // numeros[0][1] = 2;
+       // numeros[1][0] = 3;
+       // numeros[1][1] = 4;
+
+       // System.out.println(numeros);
+        //Esto nos da un null pointer esxception, porque la fila no esta definida.
+
+        //Debemos inicializar cada array dentro de cada fila/columna
+        numeros[0]= new int[2];
+        numeros[0][0] = 1;
+        numeros[0][1] = 2;
+
+        numeros[1]= new int[3];
+        numeros[1][0] = 3;
+        numeros[1][1] = 4;
+        //Tambien podemos iniciar con los elementos que llevara el array
+        //numeros[0] = new int[]{1,2,3,4,5};
+
+        System.out.println(numeros);
+
+        System.out.println(Arrays.toString(numeros));
+
+
+
+        int[][][] numeros2 = new int[10][0][3];
+        System.out.println(numeros2);
+        // Compila correctamente aunque no se pueda utilizar.
+        // No funciona al asignar un valor porque esta inicializada con 0 espacios en la segunda fila.
+        //Out Bound Exception
+
+       // String beans[] = new beans[6];
+        //Es incorrecta ya que el array tiene que definir el tipo.
+
+        java.util.Date[] dates[] = new java.util.Date[2][];
+        // los corchetes pueden ir en el primer termino, en el segundo o uno en cada como en este caso
+
+        // int[][] types = new int[][];
+        // Es incorrecto pot que no se incializa la primera array.
+
+
+        // Patron factory en la API Time ... sustituyendo la api Date.
+        // No hace falta utilizar los new, porque han quitado los constructores.
+        // Son métodos estáticos.
+
+
+
+
+
+
+    }
+}

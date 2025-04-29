@@ -122,5 +122,12 @@ public class Flow {
         }
 
 
+        switch (a)  {
+
+            default: System.out.println("default");
+
+        }
+
+
     }
 }

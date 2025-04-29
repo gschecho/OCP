@@ -59,5 +59,10 @@ public class Presedencia {
 
                 System.out.println((-1 * test)-1);
                 System.out.println(numero);
+
+                String testo = "testo";
+        System.out.println(testo.length());
+                var intArray = new int[]{1,2,3,4,5,6,7,8,9,10};
+        System.out.println(intArray.length);
     }
 }
