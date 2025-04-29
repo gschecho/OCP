@@ -55,6 +55,23 @@ public class ArraysClass {
         // Son métodos estáticos.
 
 
+        // equals mira el contenido
+        // == mira que apunten al mismo contenido
+        // intern significa que esta dentro del pool de strings
+
+        var s = " Hello";
+        var t = new String(s);
+
+        if(("Hello").equals(s)) System.out.println("uno");
+        if(t==s) System.out.println("dos");
+        if(t.intern()==s) System.out.println("tres");
+        if(t==s) System.out.println("otro dos");
+        if("Hello" == s) System.out.println("cuatro");
+        if("Hello".intern() == t) System.out.println("cinco");
+
+
+
+
 
 
 

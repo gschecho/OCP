@@ -131,3 +131,10 @@ pueden lanzar excepciones.
 String
 No se le puede pasar un int a un string, si queremos hacerlo debemos concatenar un "" para convertirlo.
 El casteo no funciona. (String)(1)
+equals mira el contenido
+== mira que apunten al mismo contenido
+intern significa que esta dentro del pool de strings // intern() mete al objeto en el pool de strings
+
+StringBuilder() -> es mutable no hace falta asignar una variable de referencia.
+append("texto") --> agrega al final del string lo que le pongamos
+insert(indicie , "texto") --> inserta el texto en el indice que le digamos

@@ -47,4 +47,6 @@ public class PatternMatching {
         PatternMatching patternMatching = new PatternMatching();
         patternMatching.printTypeB(20);
     }
+
+
 }
