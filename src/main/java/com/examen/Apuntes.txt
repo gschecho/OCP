@@ -127,6 +127,8 @@ el default puede ir en cualquier lado, pero si no tiene break se ejecutara todo 
 pueden lanzar excepciones.
 
 -----
+length ---> En los arrays es un atributo
+length() ---> En String es como metodo.
 
 String
 No se le puede pasar un int a un string, si queremos hacerlo debemos concatenar un "" para convertirlo.
@@ -138,3 +140,33 @@ intern significa que esta dentro del pool de strings // intern() mete al objeto 
 StringBuilder() -> es mutable no hace falta asignar una variable de referencia.
 append("texto") --> agrega al final del string lo que le pongamos
 insert(indicie , "texto") --> inserta el texto en el indice que le digamos
+
+
+Stringbuilder. replace(indice 1, indice 2, "Valor") -> remplaza el contenido en el indicie que le marquemos o en la consecucion de indice que le digamos
+string . replace(valor 1, valor 2,) --> valor que queremos cambira, valor que pondremos.
+
+strip() --> elimina espacios de principio y final aceptamdo unicode
+stripLeading() --> elimina los espacios en el incio
+stripTrailing() --> elimina los espacios del final
+trim()
+
+
+
+---------------
+ARRAY
+es mutable
+es fija en numero
+.equals() en dos arrays identicos nos dice que es false que sean iguales. El array no sobrescribe equals, toma el comportamiento de Object.
+
+
+MATH
+min() -> devuelve un int si se le pasa un int, double, long,
+round() --> devuelve un long o double
+floor() --> devuelve un double
+ceil() --> devuelve double
+pow() --> devuelve un double
+random()--> devuelve double
+
+
+DATE
+Los objetos d ela API java.time son inmutables.

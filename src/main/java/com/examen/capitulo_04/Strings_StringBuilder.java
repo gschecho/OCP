@@ -27,5 +27,40 @@ public class Strings_StringBuilder {
         a = a.concat(" World");
 
         System.out.println(a);
+
+
+        var string = "12345";
+        var sb2 = new StringBuilder("12345");
+
+        string = string.replace("1", "8");
+        System.out.println(string);
+        sb2.replace(2,5, "8");
+        System.out.println(sb2);
+        sb2.replace(2,5, "A").charAt(2);
+        System.out.println(sb2);
+        System.out.println(string.replace("123", "8").charAt(4));
+        System.out.println(string.length());
+
+
+
+
+
+        //
+        var numbers = "012345678";
+        numbers = numbers.indent(1);
+        System.out.println(numbers);
+        numbers = numbers.stripLeading();
+        System.out.println(numbers);
+
+        numbers = numbers.substring(1,3);
+        System.out.println(numbers);
+
+       //numbers = numbers.substring(7,7); // EXCEPCION
+        System.out.println(numbers);
+
+        numbers = numbers.substring(2);
+        System.out.println(numbers);
+
+
     }
 }

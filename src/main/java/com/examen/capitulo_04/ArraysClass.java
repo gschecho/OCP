@@ -72,6 +72,12 @@ public class ArraysClass {
 
 
 
+        int[] arrayEneteros = {1,2,3};
+        int[] arrayEneterosB = {1,2,3};
+
+        System.out.println(Arrays.toString(arrayEneteros));
+
+        System.out.println(arrayEneteros.equals(arrayEneterosB));
 
 
 
