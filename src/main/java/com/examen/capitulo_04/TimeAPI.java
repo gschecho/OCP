@@ -20,5 +20,28 @@ public class TimeAPI {
 
 
         System.out.println(localDate);
+
+
+
+        //------------------
+        var dateNow = LocalDate.now();
+        var timeNow = LocalTime.now();
+        var dateTimeNow =LocalDateTime.now();
+        var zoneIdNow = ZoneId.systemDefault();
+        var zoneDateTimeNow= ZonedDateTime.of(dateTimeNow,zoneIdNow);
+        Instant instantNow = Instant.now();
+
+        System.out.println("Now: " + instantNow);
+        String[] test = instantNow.toString().split("T");
+        System.out.println(test[0].toString());
+        System.out.println(test[1].toString());
+
+        Instant instantLater = Instant.now();
+
+        var tiempoConsumido = Duration.between(instantNow, instantLater);
+
+        System.out.println(tiempoConsumido.toMillis());
+
+
     }
 }

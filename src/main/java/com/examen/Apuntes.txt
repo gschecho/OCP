@@ -130,20 +130,35 @@ pueden lanzar excepciones.
 length ---> En los arrays es un atributo
 length() ---> En String es como metodo.
 
-String
+STRING
+
 No se le puede pasar un int a un string, si queremos hacerlo debemos concatenar un "" para convertirlo.
 El casteo no funciona. (String)(1)
-equals mira el contenido
-== mira que apunten al mismo contenido
+equals("") mira el contenido.
+== mira que apunten a la misma variable de referencia.
 intern significa que esta dentro del pool de strings // intern() mete al objeto en el pool de strings
+
+indent(cantidad ) --> Agrega la cantidad identada delante de cada línea y añade un enter al final.
+.translateEscapes() --> Elimina los scapes \ .
+
+.substring(1,2) ---> da un caracter.
+.substring(2,2) ---> No devuelve nada.
+.substring(6,1) ---> Lanza una excepcion.
+El segundo numero llega hasta 1 más del length del array.
+
+
+
+
 
 StringBuilder() -> es mutable no hace falta asignar una variable de referencia.
 append("texto") --> agrega al final del string lo que le pongamos
-insert(indicie , "texto") --> inserta el texto en el indice que le digamos
+insert(indicie , "texto") --> inserta el texto en el índice que le digamos
 
 
-Stringbuilder. replace(indice 1, indice 2, "Valor") -> remplaza el contenido en el indicie que le marquemos o en la consecucion de indice que le digamos
-string . replace(valor 1, valor 2,) --> valor que queremos cambira, valor que pondremos.
+
+
+StringBuilder. replace(indice 1, indice 2, "Valor") -> remplaza el contenido en el indicie que le marquemos o en la consecucion de indice que le digamos
+string. replace(valor 1, valor 2,) --> valor que queremos cambira, valor que pondremos.
 
 strip() --> elimina espacios de principio y final aceptamdo unicode
 stripLeading() --> elimina los espacios en el incio
@@ -157,6 +172,18 @@ ARRAY
 es mutable
 es fija en numero
 .equals() en dos arrays identicos nos dice que es false que sean iguales. El array no sobrescribe equals, toma el comportamiento de Object.
+.compare(arr1, arr2) --> Negativo si el primero es más peq que el segundo, un cero si son iguales y positivo si es el primero más grande que el segundo. Si hay un elemento que difiere dentro del array si es mas largo en el primer array tira un numero positivo, si es mas pequeño tira un negativo.
+.mismatch(arr1, arr2) -->
+
+con sort() --> Primero los números, lugo mayúsculas y por último minúsculas.
+binarySearch() --> Para utilizar el binarySearch primero el array debe ordenarse, sino da 0. Si no se existe en el array utiliza el supuesto indice en el que estaría en negativo y  se resta 1.
+
+
+
+
+
+
+
 
 
 MATH
@@ -170,3 +197,4 @@ random()--> devuelve double
 
 DATE
 Los objetos d ela API java.time son inmutables.
+Instant necesita que conozcamos la zona horaria antes de utilizarlo. Si no es Instant.now();

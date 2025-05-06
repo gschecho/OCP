@@ -80,6 +80,20 @@ public class ArraysClass {
         System.out.println(arrayEneteros.equals(arrayEneterosB));
 
 
+        String[] array = {"PIG", "pig", "123"};
+
+
+        System.out.println("NO ORDENADO");
+        System.out.println(Arrays.binarySearch(array, "PIG")); //1
+
+        System.out.println("ORDENADO");
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
+        System.out.println(Arrays.binarySearch(array, "Pippa")); //-3
+        System.out.println(Arrays.binarySearch(array, "PIG")); //1
+        System.out.println(Arrays.binarySearch(array, "4321")); //-2
+        //
+
 
 
     }

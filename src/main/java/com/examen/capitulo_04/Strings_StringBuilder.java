@@ -62,5 +62,15 @@ public class Strings_StringBuilder {
         System.out.println(numbers);
 
 
+
+        //----
+
+     StringBuilder sb3 = new StringBuilder("Hello\nWorld\\t");
+     System.out.println(sb3);
+
+     System.out.println(sb3.toString().indent(2));
+
+     System.out.println(sb3.toString().translateEscapes());
+
     }
 }
