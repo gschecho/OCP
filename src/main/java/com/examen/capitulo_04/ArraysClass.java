@@ -2,6 +2,8 @@ package com.examen.capitulo_04;
 
 import java.util.*;
 
+import static java.util.Arrays.*;
+
 public class ArraysClass {
     public static void main(String[] args) {
 
@@ -81,6 +83,7 @@ public class ArraysClass {
 
 
         String[] array = {"PIG", "pig", "123"};
+        String[] array2 = {"PIG", "pig", "124"};
 
 
         System.out.println("NO ORDENADO");
@@ -94,6 +97,9 @@ public class ArraysClass {
         System.out.println(Arrays.binarySearch(array, "4321")); //-2
         //
 
+
+        // MISMATCH Y COMPARE
+        System.out.println(mismatch(array, array2));
 
 
     }

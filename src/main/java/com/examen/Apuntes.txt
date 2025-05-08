@@ -173,7 +173,7 @@ es mutable
 es fija en numero
 .equals() en dos arrays identicos nos dice que es false que sean iguales. El array no sobrescribe equals, toma el comportamiento de Object.
 .compare(arr1, arr2) --> Negativo si el primero es más peq que el segundo, un cero si son iguales y positivo si es el primero más grande que el segundo. Si hay un elemento que difiere dentro del array si es mas largo en el primer array tira un numero positivo, si es mas pequeño tira un negativo.
-.mismatch(arr1, arr2) -->
+.mismatch(arr1, arr2) --> 
 
 con sort() --> Primero los números, lugo mayúsculas y por último minúsculas.
 binarySearch() --> Para utilizar el binarySearch primero el array debe ordenarse, sino da 0. Si no se existe en el array utiliza el supuesto indice en el que estaría en negativo y  se resta 1.
