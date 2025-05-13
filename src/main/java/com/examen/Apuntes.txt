@@ -155,7 +155,8 @@ append("texto") --> agrega al final del string lo que le pongamos
 insert(indicie , "texto") --> inserta el texto en el índice que le digamos
 
 
-
+Si agregamos un .substring() a un StringBuilder convierte el resultado en un Sgring pero no lo agrega al pool de Strings,
+habría que agregarlo a la variable de referencia.
 
 StringBuilder. replace(indice 1, indice 2, "Valor") -> remplaza el contenido en el indicie que le marquemos o en la consecucion de indice que le digamos
 string. replace(valor 1, valor 2,) --> valor que queremos cambira, valor que pondremos.
@@ -196,5 +197,11 @@ random()--> devuelve double
 
 
 DATE
-Los objetos d ela API java.time son inmutables.
+Los objetos de la API java.time son inmutables.
 Instant necesita que conozcamos la zona horaria antes de utilizarlo. Si no es Instant.now();
+
+
+Api java.time
+Es inmutable, por lo que hay que reasignarlo cada vez que le pasemos un metodo.
+var date = LocalDate.of(2022, Month.APRIL, 30)
+date.plusDays(2) --> No lo guarda
