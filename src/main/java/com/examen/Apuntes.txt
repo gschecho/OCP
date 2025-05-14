@@ -205,3 +205,17 @@ Api java.time
 Es inmutable, por lo que hay que reasignarlo cada vez que le pasemos un metodo.
 var date = LocalDate.of(2022, Month.APRIL, 30)
 date.plusDays(2) --> No lo guarda
+
+
+
+
+-----------------------------------------------
+HashCode  - equals
+Devuelve un integer
+Dentro del mismo programa el resultado de hashCode debe ser el mismo.
+.equals devuelve true llamar a hashCode() debe regresar mismo resultado en ámbos
+.equals devuelve false llamar a hashCode() podría regresar mismo resultado en ambos objetos.
+
+
+
+
