@@ -221,3 +221,9 @@ Dentro del mismo programa el resultado de hashCode debe ser el mismo.
 
 
 
+
+PRINCIPIOS
+
+Anierto/Cerrado - Clases abiertas para expansión pero cerradas para modificaciones.
+
+
