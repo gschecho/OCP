@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
 
-public class Principal3 {
+public class Principal4 {
 
     public static void main(String[] args) {
 
+
+        //CON PREDICATE
 
         List<Empleado> listaEmpleados =  new ArrayList<>();
 
@@ -16,16 +18,16 @@ public class Principal3 {
         listaEmpleados.add( new Empleado("Alvaro", 43, 35.000));
         listaEmpleados.add( new Empleado("Perdo", 33, 25.000));
 
-        Predicado<Empleado> p = x-> x.getSueldo()> 30.00;
-        Predicado<Empleado> p2 = x-> x.getEdad() > 30;
+        Predicate<Empleado> p = x-> x.getSueldo()> 30.00;
+        Predicate<Empleado> p2 = x-> x.getEdad() > 30;
         //Predicado<Empleado> np = Predicado.negate(p);
 
         // DEFAULT
-        Predicado<Empleado> np = p.negate();
+        Predicate<Empleado> np = p.negate();
         mostrar(listaEmpleados, np);
         System.out.println("---------------------------------------");
 
-        Predicado<Empleado> and = Predicado.and(p, p2);
+        Predicate<Empleado> and = p.and(p2);
 
         mostrar(listaEmpleados, and);
 
@@ -35,23 +37,9 @@ public class Principal3 {
         System.out.println( "Lambda directa, pasada como parámetro");
         mostrar(listaEmpleados, x -> x.getSueldo()> 30.000);
 
-        //TEST
-
-        System.out.println("Estárico");
-
-        //Para el metodo estático solo necesitamos importar la interface
-        Predicado.probarstatic();
-
-        //Para el método default necesitamos una instancia
-        p.probarDefault();
-
-
-        //Regresar una lambda, función de orden superior
-        Predicado<Empleado> pr = Predicado.returnPredicate();
-
 
         System.out.println("Regresa lo contrario de p");
-      //  mostrar(listaEmpleados, Predicado.negate(p));
+          mostrar(listaEmpleados, p.negate());
 
 
 
@@ -60,9 +48,9 @@ public class Principal3 {
 
 // Predicate de la api de java
 
-    static void mostrar(List<Empleado> lista, Predicado<Empleado> p){
+    static void mostrar(List<Empleado> lista, Predicate<Empleado> p){
         for (Empleado e : lista){
-            if(p.probar(e)){
+            if(p.test(e)){
                 System.out.println(e);
             }
         }
